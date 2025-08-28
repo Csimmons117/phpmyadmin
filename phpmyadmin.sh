@@ -4,7 +4,7 @@ echo "# Running script #"
 echo "##################"
 # run file as root
 apt update
-apt upgrade
+apt upgrade -y
 # installing the mysql before the phpmyadmin
 # note for later :     mysql -u root -p
 apt install mysql-server
