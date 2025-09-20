@@ -5,6 +5,11 @@ echo "##################"
 # run file as root
 apt update
 apt upgrade -y
+# Install open ssh
+apt install openssh-server
+systemctl start openssh-server
+systemctl enable openssh-server
+ufw allow ssh
 # installing the mysql before the phpmyadmin
 # note for later :     mysql -u root -p
 apt install mysql-server
